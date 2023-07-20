@@ -1,6 +1,6 @@
 package j.programs;
 
-public class cmdLineArgs {
+public class CmdLineArgs {
 
 
 	public static void main(String[] args) {

@@ -1,6 +1,6 @@
 package j.programs;
 
-public class typesOfLoops {
+public class TypesOfLoops {
 
 	public static void main(String[] args) {
 		/* Mainly 4 types of loop 
