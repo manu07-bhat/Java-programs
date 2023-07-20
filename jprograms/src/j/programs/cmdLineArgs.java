@@ -16,6 +16,8 @@ public class cmdLineArgs {
 		
 		System.out.println(Character.MAX_VALUE+"\n");
 		
+		int k =100_000_000; //_ for understanding
+		System.out.println(k);
 		//char holds 2 bytes bec java follows ASCII code system
 		
 		//type casting
