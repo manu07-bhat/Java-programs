@@ -20,6 +20,8 @@ public class Twodarray {
 			}
 		}
 		
+		
+		
 		//Output
 		for (int i = 0; i < a.length; i++) {
 			for (int j = 0; j < a[i].length; j++) {
@@ -28,7 +30,7 @@ public class Twodarray {
 			System.err.print(" | ");
 		}
 		
-
+scan.close();
 	}
 
 }

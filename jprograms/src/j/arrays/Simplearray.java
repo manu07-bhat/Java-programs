@@ -3,11 +3,11 @@ package j.arrays;
 import java.util.Scanner;
 
 public class Simplearray {
-
+	Scanner scan = new Scanner(System.in);
 	void aD()
 	{
 		//1 D
-		Scanner scan = new Scanner(System.in);
+		
 		int []a= new int[6]; //one dimens		
 		
 		//input
@@ -25,7 +25,7 @@ public class Simplearray {
 	}
 	
 	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
+		
 		Simplearray obj = new Simplearray();
 		obj.aD();
 		
