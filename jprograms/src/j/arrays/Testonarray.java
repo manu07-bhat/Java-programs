@@ -8,7 +8,36 @@ public class Testonarray {
 		// Drawbacks and testing on arrays
 		
 		Scanner scan = new Scanner(System.in);
-		int []a = new int[5];
+		
+		int [][]x = new int [3][];
+		x[0] = new int [5];
+		x[1] = new int [5];
+		x[2] = new int [3];
+		
+		//input
+		for (int i = 0; i < x.length; i++) {
+			for (int j = 0; j < x[i].length; j++) {
+				
+				x[i][j] = scan.nextInt();
+			}
+		}
+		
+		//output
+		for (int i = 0; i < x.length; i++) {
+			for (int j = 0; j < x[i].length; j++) {
+				
+				System.out.print(x[i][j]+" " );
+			}
+			System.out.println();
+		}
+		
+		
+		System.out.println("\n\n\n");
+		
+		
+	
+		
+		int []a = new int[	5];
 		a[1] = 10;
 		a[2] = (int)99.8; //type casting can be done
 		
