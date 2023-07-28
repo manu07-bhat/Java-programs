@@ -1,3 +1,4 @@
+package searchAndsorting;
 import java.util.Scanner;
 
 public class Sorting {
@@ -59,7 +60,7 @@ public class Sorting {
 		for (int i = 0; i < ar.length; i++) {
 			ar[i] = scan.nextInt();
 		}
-		selectionSort(ar);
+		selectionSort(ar);		//
 		for (int i = 0; i < ar.length; i++) {
 			System.out.print(ar[i] + " ");
 		}

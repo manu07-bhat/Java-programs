@@ -1,8 +1,8 @@
-package Searching;
+package searchAndsorting;
 
 import java.util.Arrays;
 
-public class Linearsearch {
+public class Searching {
 
 	public static int linearSearch(int a1[], int key1) {
 		for (int i = 0; i < a1.length; i++) {
