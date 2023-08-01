@@ -174,10 +174,75 @@ public class Stringproblems2 {
 
 	}
 
+	static void contains(String s) {
+		int count = 0;
+		String t = "acad";
+
+		for (int i = 0; i < s.length() && count < t.length(); i++) {
+
+			if (s.charAt(i) == t.charAt(count)) {
+				count++;
+			} else {
+				count = 0;
+			}
+		}
+		if (t.length() == count) {
+			System.out.println(true);
+		} else {
+			System.out.println(false);
+		}
+
+	}
+
+	static void replace(String s) {
+
+		char f[] = new char[s.length()];
+
+		for (int i = 0; i < s.length(); i++) {
+			f[i] = s.charAt(i);
+		}
+
+		char new_elmt = 'z';
+		char old_elmt = 'a';
+		for (int i = 0; i < f.length; i++) {
+
+			if (f[i] == old_elmt) {
+				f[i] = new_elmt;
+
+			}
+		}
+
+		for (int i = 0; i < f.length; i++) {
+			System.out.print(f[i]);
+		}
+
+	}
+
+	static void subString(String s) {
+		int startIndex = 1;
+		String t = "";
+
+		for (int i = startIndex; i < s.length(); i++) {
+			t = t + s.charAt(i);
+		}
+		System.out.println(t);
+	}
+	
+	static void subString_Endindex(String s) {
+		int startIndex = 1;
+		int endIndex = 5;
+		String t = "";
+
+		for (int i = startIndex; i < endIndex; i++) {
+			t = t + s.charAt(i);
+		}
+		System.out.println(t);
+	}
+
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		String s = scan.next();
-		endsWith(s);
+		String s = scan.nextLine();
+		subString_Endindex(s);
 
 	}
 
