@@ -105,7 +105,7 @@ public class Stringproblems2 {
 				break;
 			}
 		}
-		for (int i1 = s.length()-1; i1 > 0; i1--) {
+		for (int i1 = s.length() - 1; i1 > 0; i1--) {
 			if (s.charAt(i1) != ' ') {
 				l1 = i1;
 				break;
@@ -117,11 +117,67 @@ public class Stringproblems2 {
 		return t;
 	}
 
+	static char[] toCharArray(String s) {
+		char f[] = new char[s.length()];
+
+		for (int i = 0; i < s.length(); i++) {
+			f[i] = s.charAt(i);
+		}
+		return f;
+	}
+
+	static boolean equals() {
+		String s1 = "javassssssssss";
+		String s2 = "javaa";
+		if (s1.length() == s2.length()) {
+			for (int i = 0; i < s1.length(); i++) {
+				if (s1.charAt(i) != s2.charAt(i)) {
+					return false;
+				}
+			}
+			return true;
+		}
+		return false;
+	}
+
+	static void startWith(String s) {
+		int count = 0;
+		String key = "tap";
+		for (int i = 0; i < key.length(); i++) {
+
+			if (s.charAt(i) == key.charAt(count)) {
+				count++;
+			}
+		}
+		if (count == key.length()) {
+			System.out.println("startswith");
+		} else {
+			System.out.println("not startwith");
+		}
+
+	}
+
+	static void endsWith(String s) {
+		String key = "don";
+		int count = 0;
+		for (int i = s.length() - key.length(); i < s.length(); i++) {
+
+			if (s.charAt(i) == key.charAt(count)) {
+				count++;
+			}
+		}
+		if (count == key.length()) {
+			System.out.println("startswith");
+		} else {
+			System.out.println("not startwith");
+		}
+
+	}
+
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		String s = scan.nextLine();
-		trim(s);
-		System.out.println(trim(s));
+		String s = scan.next();
+		endsWith(s);
 
 	}
 
