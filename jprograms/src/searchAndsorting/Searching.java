@@ -37,10 +37,10 @@ public class Searching {
 
 	public static void main(String[] args) {
 
-		int[] a = {90,40,50,-10,20};
+		int[] a = {1 ,2 ,3 ,4 ,33};
 		Arrays.sort(a);
 		
-		int key = -10;
+		int key = 33;
 		System.out.println(binarySearch(a, key));
 	}
 
