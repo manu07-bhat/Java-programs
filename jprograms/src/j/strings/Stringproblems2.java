@@ -127,7 +127,7 @@ public class Stringproblems2 {
 	}
 
 	static boolean equals() {
-		String s1 = "javassssssssss";
+		String s1 = "javaA";
 		String s2 = "javaa";
 		if (s1.length() == s2.length()) {
 			for (int i = 0; i < s1.length(); i++) {
@@ -241,8 +241,8 @@ public class Stringproblems2 {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		String s = scan.nextLine();
-		subString_Endindex(s);
+//		String s = scan.nextLine();
+		System.out.println(equals());
 
 	}
 
