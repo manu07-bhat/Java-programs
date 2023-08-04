@@ -1,8 +1,37 @@
 package j.programs;
 
 public class TypesOfLoops {
+	
+	static void switchCase(int day) {
+		switch (day) {
+		  case 1:
+		    System.out.println("Monday");
+		    break;
+		  case 2:
+		    System.out.println("Tuesday");
+		    break;
+		  case 3:
+		    System.out.println("Wednesday");
+		    break;
+		  case 4:
+		    System.out.println("Thursday");
+		    break;
+		  case 5:
+		    System.out.println("Friday");
+		    break;
+		  case 6:
+		    System.out.println("Saturday");
+		    break;
+		  case 7:
+		    System.out.println("Sunday");
+		    break;
+		}
+		
+	}
 
 	public static void main(String[] args) {
+		
+		  switchCase(6);
 		/* Mainly 4 types of loop 
 			for loop
 			for each
@@ -53,6 +82,8 @@ public class TypesOfLoops {
 	        for (int i1 = 0; i1 < ar.length; i1++) {
 	        	System.out.println(ar[i1]);
 	        }
+	        
+	      
 		
 	}
 
