@@ -1,4 +1,4 @@
-package searchAndsorting;
+package j.searchAndsorting;
 import java.util.Scanner;
 
 public class Sorting {
