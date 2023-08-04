@@ -6,8 +6,8 @@ class Customer2 {
 	private long cnumber;
 
 	public Customer2(int cid, String cname, long cnumber) {
-
-		this.cid = cid;
+		
+		this.cid = cid;		//resolves Shadowing problem 
 		this.cname = cname;
 		this.cnumber = cnumber;
 
