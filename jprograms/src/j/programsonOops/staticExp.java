@@ -33,8 +33,9 @@ class Test {
 public class staticExp {
 
 	public static void main(String[] args) {
-//		Test.fun1();
+
 		Test obj = new Test();
+		Test.fun1();
 		obj.fun2();
 	}
 
