@@ -2,25 +2,17 @@ package j.programsonOops;
 
 import java.util.Scanner;
 
-interface Calculator {
+interface Calculator1 {
 
 	void add();
 
 	void sub();
 }
 
-class MyCal implements Calculator {
+abstract class MyCal1 implements Calculator1 {
 
 	public void add() {
-		int x = 100;
-		int y = 200;
-		System.out.println(x + y);
-	}
-
-	public void sub() {
-		int x = 100;
-		int y = 200;
-		System.out.println(x - y);
+		System.out.println("Add");
 	}
 
 	void mul() {
@@ -30,7 +22,7 @@ class MyCal implements Calculator {
 	}
 }
 
-class MyCal2 implements Calculator {
+class MyCal21 implements Calculator1 {
 	Scanner scan = new Scanner(System.in);
 
 	public void add() {
@@ -49,28 +41,21 @@ class MyCal2 implements Calculator {
 	}
 }
 
-class Work {
+class Work1 {
 
-	void reference(Calculator ref) {
+	void reference(Calculator1 ref) {
 		ref.add();
 		ref.sub();
 	}
 }
 
-public class InterfaceProgram {
+public class InterfaceProgram2 {
 
 	public static void main(String[] args) {
+		MyCal21 k = new MyCal21();
 
-//		MyCal m1 = new MyCal();
-//		MyCal2 m2 = new MyCal2();
-//
-//		Work w = new Work();
-//		w.reference(m2);
-//		Work.reference(m1);  //if method is static 
-//		Calculator c1 = new MyCal();
-//
-//		((MyCal) (c1)).mul();
-
+		Work1 w = new Work1();
+		w.reference(k);
 	}
 
 }
