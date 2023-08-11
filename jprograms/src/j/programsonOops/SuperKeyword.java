@@ -1,10 +1,10 @@
 package j.programsonOops;
 
-class Parent1 {
+class Parent12 {
 	private static int i = 99;
 }
 
-public class SuperKeyword extends Parent1 {
+public class SuperKeyword extends Parent12 {
 	int i = 9;
 
 	void print() {
