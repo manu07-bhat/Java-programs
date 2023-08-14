@@ -6,7 +6,7 @@ public class CmdLineArgs {
 	public static void main(String[] args) {
 		//cmdLine agrs
 		System.out.println("Tap academy");
-		System.out.println(args[0]+args[2]+"\n");
+//		System.out.println(args[0]+args[2]+"\n");
 		//got to run > run config > add argumnets in arguments section 
 		
 		//to find the value/capacity  for datatypes
