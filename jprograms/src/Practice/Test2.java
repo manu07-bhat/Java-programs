@@ -137,6 +137,21 @@ public class Test2 {
 		}
 	}
 
+	static void palandrome() {
+		String s = "kaaae	k";
+		int i = 0, j = s.length() - 1;
+		while (i <= j) {
+			if (s.charAt(i) != s.charAt(j)) {
+				System.out.println("Not a Palandrome");
+				System.exit(0);
+			} else {
+				i++;
+				j--;
+			}
+		}
+		System.out.println("Palandrome");
+	}
+
 	public static void main(String[] args) {
 //		max();
 //		swap();
@@ -146,7 +161,8 @@ public class Test2 {
 //		fact();
 //		prime();
 //		printPrime();
-		arrySortwithtemp();
+//		arrySortwithtemp();
+		palandrome();
 
 	}
 
