@@ -138,7 +138,7 @@ public class Test2 {
 	}
 
 	static void palandrome() {
-		String s = "kaaae	k";
+		String s = "kaaaek";
 		int i = 0, j = s.length() - 1;
 		while (i <= j) {
 			if (s.charAt(i) != s.charAt(j)) {
