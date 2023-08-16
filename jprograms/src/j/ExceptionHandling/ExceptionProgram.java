@@ -16,7 +16,8 @@ public class ExceptionProgram {
 			int b = scan.nextInt();
 			int c = a / b;
 			System.out.println(c);
-		} catch (Exception e) {
+		} 
+		catch (Exception e) {
 			System.out.println(" non zero denominator | or non floating value");
 		}
 
