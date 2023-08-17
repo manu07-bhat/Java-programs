@@ -3,7 +3,7 @@ package j.ExceptionHandling;
 import java.util.Scanner;
 
 class Demo11 {
-	void fun1() throws Exception {
+	void fun1()  {
 		System.out.println("Connection 41 estd ");
 		Scanner scan = new Scanner(System.in);
 
