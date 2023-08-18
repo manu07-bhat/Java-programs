@@ -1,6 +1,6 @@
 package Practice;
 
-class Parent {
+class Parent11 {
 
 //	int a = 10;
 
@@ -9,7 +9,7 @@ class Parent {
 	}
 }
 
-class Child extends Parent {
+class Child extends Parent11 {
 
 	void method2() {
 		super.method2();
@@ -21,7 +21,7 @@ public class Demo2 {
 
 	public static void main(String[] args) {
 
-		Parent d = new Child();
+		Parent11 d = new Child();
 		d.method2();
 	}
 
