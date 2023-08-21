@@ -3,6 +3,7 @@ package Practice;
 class parent {
 	public parent() {
 		System.out.println("Parent");
+		
 	}
 }
 
@@ -26,6 +27,7 @@ public class ConstructorOver extends parent {
 	}
 
 	public static void main(String[] args) {
+		System.out.println(args[0]);
 		ConstructorOver ob = new ConstructorOver();
 	}
 
