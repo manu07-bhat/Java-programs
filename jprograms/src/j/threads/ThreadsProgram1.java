@@ -2,7 +2,7 @@ package j.threads;
 
 import java.util.Scanner;
 
-class Test1 extends Thread {
+class Test1 implements Runnable {
 
 	public void run() {
 		System.out.println("Addition started ");
@@ -18,7 +18,7 @@ class Test1 extends Thread {
 	}
 }
 
-class Test2 extends Thread {
+class Test2 implements Runnable {
 
 	public void run() {
 		System.out.println("Printing char started");
@@ -38,7 +38,7 @@ class Test2 extends Thread {
 
 }
 
-class Test3 extends Thread {
+class Test3 implements Runnable {
 
 	public void run() {
 		System.out.println("Printing number started");
@@ -51,6 +51,7 @@ class Test3 extends Thread {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
+			System.out.println("Printing number ended");
 		}
 
 	}
@@ -63,14 +64,21 @@ public class ThreadsProgram1 {
 		Thread t = Thread.currentThread();
 		System.out.println(t);
 
-		Test1 t1 = new Test1();
+		Test1 t1 = new Test1(); // jobs
 		Test2 t2 = new Test2();
 		Test3 t3 = new Test3();
 
-		t1.start();
-		t2.start();
-		t3.start();
+//		t1.start(); //error
+//		t2.start();
+//		t3.start();
 
+		Thread th1 = new Thread(t1); // workers
+		Thread th2 = new Thread(t2);
+		Thread th3 = new Thread(t3);
+
+		th1.start();
+		th2.start();
+		th3.start();
 	}
 
 }
