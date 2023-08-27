@@ -1,5 +1,8 @@
 package j.javaPrograms;
 
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+
 public class ProgramsOn27 {
 
 	static void presentA() {
@@ -225,6 +228,17 @@ public class ProgramsOn27 {
 
 	}
 
+	static void ipAddress() {
+
+		try {
+			InetAddress IP = InetAddress.getLocalHost();
+			System.out.println("IP of my system is := " + IP.getHostAddress());
+		} catch (UnknownHostException e) {
+			e.printStackTrace();
+		}
+
+	}
+
 	public static void main(String[] args) {
 //		presentA();
 //		vol();
@@ -234,9 +248,10 @@ public class ProgramsOn27 {
 //		helloWord();
 //		revString();
 //		printString();
-		checkWord();
+//		checkWord();
 //		pattern();
 //		minAndMaxArray();
+		ipAddress();
 	}
 
 }
