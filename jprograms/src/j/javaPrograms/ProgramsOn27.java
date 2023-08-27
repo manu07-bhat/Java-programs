@@ -1,7 +1,5 @@
 package j.javaPrograms;
 
-import java.util.Iterator;
-
 public class ProgramsOn27 {
 
 	static void presentA() {
@@ -179,26 +177,11 @@ public class ProgramsOn27 {
 
 	}
 
-	static void checkWord() // *
-	{
-		String s = "i love java and java is so easy";
-		String key = "easy";
-		int count = 0;
-		for (int i = 0; i < key.length(); i++) {
-			for (int j = 0; j < s.length(); j++) {
+	static void checkWord() {
+		String s = "I love Java and Java is so easy";
+		String key = "aeasy";
+		System.out.println(s.contains(key));
 
-				if (s.charAt(i) == key.charAt(j)) {
-					count++;
-				}
-
-			}
-		}
-		System.out.println(count);
-		if (count == key.length()) {
-			System.out.println("Present");
-		} else {
-			System.out.println("Not present");
-		}
 	}
 
 	static void pattern() {
@@ -251,8 +234,8 @@ public class ProgramsOn27 {
 //		helloWord();
 //		revString();
 //		printString();
-//		checkWord();
-		pattern();
+		checkWord();
+//		pattern();
 //		minAndMaxArray();
 	}
 
