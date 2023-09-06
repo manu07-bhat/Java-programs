@@ -5,7 +5,7 @@ public class SwapString {
 		String s1 = "jack";
 		String s2 = "jill";
 
-		s1 = s1 + s2;
+		s1 = s1 + s2; //jackjill
 		s2 = s1.substring(0, s1.length() - s2.length());
 		s1 = s1.substring(s2.length());
 		System.out.println(s1);
