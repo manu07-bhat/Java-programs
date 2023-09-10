@@ -6,11 +6,12 @@ import java.net.UnknownHostException;
 public class ProgramsOn27 {
 
 	static void presentA() {
-		String s = "java Developer";
+		String s = "java ADevelopera";
 		int count = 0;
+		char c = 'e';
 		for (int i = 0; i < s.length(); i++) {
 
-			if (s.charAt(i) == 'A' || s.charAt(i) == 'a') {
+			if (s.charAt(i) == c || s.charAt(i) == c) {
 				count++;
 			}
 		}
@@ -19,9 +20,11 @@ public class ProgramsOn27 {
 	}
 
 	static void vol() {
-		String s = "Java Developer";
+		String s = "          Java Developer               ";
 		int count = 0;
+		s.trim();
 
+		s.replace(" ", "");
 		for (int i = 0; i < s.length(); i++) {
 			char c = s.charAt(i);
 			if (c == 'a' || c == 'A' || c == 'e' || c == 'E' || c == 'i' || c == 'I' || c == 'o' || c == 'O' || c == 'u'
@@ -150,23 +153,46 @@ public class ProgramsOn27 {
 
 	static void revString() {
 		String ar[] = { "animal", "dog", "cat" };
-		String ar2[] = new String[3];
+		String s1 ="";
+		
+		//input array
+		System.out.println("input array");
+		for (int i = 0; i < ar.length; i++) {
+			System.out.println(ar[i] + " ");
+		}
+		
+		
+		
+		System.out.println("\n-------------------");
+		System.out.println("reverse array");
+		String[] ar2 = null;
+		
+		
 		for (int i = ar.length - 1; i >= 0; i--) {
 			System.out.print(ar[i] + " ");
-			ar2[i] = ar[i];
-
+			s1 =s1 +ar[i]+" ";
+			
+			ar2=s1.split(" ", 3);
 		}
-		System.out.println("\n--------------");
-
-		for (int i = ar2.length - 1; i >= 0; i--) {
-			System.out.println(ar2[i]);
-
-		}
+		System.out.println("\n-------------------");
+		System.out.println("\nReverseString reverse array");
+		
+		
+			ReverseString.rev(s1);
+		
+		
+//		System.out.println(s1);
+//		System.out.println("\n--------------");
+//
+//		for (int i = ar2.length - 1; i >= 0; i--) {
+//			System.out.println(ar2[i]);
+//
+//		}
 
 	}
 
 	static void printString() {
-		String s = "Java Mava";
+		String s = "Java Mava ";
 
 		for (int i = 0; i < s.length(); i++) {
 
@@ -246,12 +272,12 @@ public class ProgramsOn27 {
 //		upperAndLower();
 //		upperAndLower2();
 //		helloWord();
-//		revString();
+		revString();
 //		printString();
 //		checkWord();
 //		pattern();
 //		minAndMaxArray();
-		ipAddress();
+//		ipAddress();
 	}
 
 }
