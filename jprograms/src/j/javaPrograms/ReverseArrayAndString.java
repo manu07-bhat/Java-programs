@@ -21,7 +21,7 @@ public class ReverseArrayAndString {
 		for (int i = ar.length - 1; i >= 0; i--) {
 			System.out.println(ar[i]);
 			s1 = s1 + ar[i] + " ";
-			ar2 = s1.split(" ", 3);
+//			ar2 = s1.split(" ", 3);
 		}
 		System.out.println(s1);
 
@@ -29,7 +29,7 @@ public class ReverseArrayAndString {
 		
 		//Sorting array in asscending order
 		Arrays.sort(ar);
-		System.out.println("\n-----------------");
+		System.out.println("\n-----------------?");
 
 		// Sorting array in descending order
 		Arrays.sort(ar, Collections.reverseOrder());
