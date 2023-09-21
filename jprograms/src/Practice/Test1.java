@@ -40,6 +40,7 @@ public class Test1 {
 	static void Palandrome() {
 		String s = "kanasdfanak";
 		int i = 0, j = s.length() - 1;
+		
 		while (i <= j) {
 			if (s.charAt(i) != s.charAt(j)) {
 				System.out.println("Not a Palandrome");
