@@ -50,7 +50,7 @@ public class Programs {
 	}
 
 	static void fib() {
-		int s1 = 0, s2 = 1, s3 = 0;
+		int s1 = 0, s2 = 1, s3 ;
 		int fib = 10;
 
 		System.out.print(s1 + " " + s2);
@@ -162,7 +162,7 @@ public class Programs {
 //		pal12();
 //		prime();
 //		swap();
-//		fib();
+		fib();
 //		fact();
 //		rev("lalalal");
 //		array();
