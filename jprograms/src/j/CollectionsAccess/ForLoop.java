@@ -56,7 +56,7 @@ public class ForLoop {
 
 		System.out.println(obj);
 		for (int i = 0; i <= obj.size() - 1; i++) {
-			System.out.println(obj.get(i)); // gets error undefined
+//			System.out.println(obj.get(i)); // gets error undefined
 		}
 	}
 
@@ -70,7 +70,7 @@ public class ForLoop {
 
 		System.out.println(obj);
 		for (int i = 0; i <= obj.size() - 1; i++) {
-			System.out.println(obj.get(i)); // gets error undefined
+//			System.out.println(obj.get(i)); // gets error undefined
 		}
 	}
 
@@ -84,7 +84,7 @@ public class ForLoop {
 
 		System.out.println(obj);
 		for (int i = 0; i <= obj.size() - 1; i++) {
-			System.out.println(obj.get(i)); // gets error undefined
+//			System.out.println(obj.get(i)); // gets error undefined
 		}
 	}
 
@@ -98,7 +98,7 @@ public class ForLoop {
 
 		System.out.println(obj);
 		for (int i = 0; i <= obj.size() - 1; i++) {
-			System.out.println(obj.get(i)); // gets error undefined
+//			System.out.println(obj.get(i)); // gets error undefined
 		}
 	}
 
