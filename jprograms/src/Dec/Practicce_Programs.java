@@ -1,10 +1,12 @@
-package Practice2;
+package Dec;
 
-public class Palandrome_Program {
+public class Practicce_Programs {
 
-	public static void main(String[] args) {
-		String s1 = "kannaK";
+	static void pal() {
+		// palandrome
+		String s1 = "WOW";
 		int i = 0, j = s1.length() - 1;
+
 		while (i <= j) {
 			if (s1.charAt(i) != s1.charAt(j)) {
 				System.out.println("Not a palandrome");
@@ -13,10 +15,13 @@ public class Palandrome_Program {
 				i++;
 				j--;
 			}
-
 		}
 		System.out.println("Palandrome");
 
+	}
+
+	public static void main(String[] args) {
+		pal();
 	}
 
 }
